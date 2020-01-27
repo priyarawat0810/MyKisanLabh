@@ -23,7 +23,7 @@ public class CustLoginActivity extends AppCompatActivity {
     private static final String TAG="LoginAct";
 
     EditText email,pass;
-    Button login,reg,skip;
+    Button login,reg;
 
     private FirebaseAuth mAuth;
 
@@ -32,16 +32,16 @@ public class CustLoginActivity extends AppCompatActivity {
         pass=findViewById(R.id.password);
         login=findViewById(R.id.login);
         reg=findViewById(R.id.signup);
-        skip=findViewById(R.id.skip);
+      //  skip=findViewById(R.id.skip);
 
-        skip.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(CustLoginActivity.this, CustomerActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+      //  skip.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(CustLoginActivity.this, CustomerActivity.class);
+//                startActivity(intent);
+//                finish();
+//            }
+//        });
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -118,6 +118,6 @@ public class CustLoginActivity extends AppCompatActivity {
         }
         Intent intent =new Intent(CustLoginActivity.this,CustomerActivity.class);
         startActivity(intent);
-        finish();
+       // finish();
     }
 }

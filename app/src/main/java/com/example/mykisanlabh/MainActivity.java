@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        //custlogin = findViewById(R.id.custlogin);
+
         //FloatingActionButton fab = findViewById(R.id.fab);
         //fab.setOnClickListener(new View.OnClickListener() {
           //  @Override
@@ -49,14 +49,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             //}
         //});
 
-       // custlogin.setOnClickListener(new View.OnClickListener() {
-         //   @Override
-           // public void onClick(View v) {
-             //   Intent intent = new Intent(MainActivity.this, CustLoginActivity.class);
-               // startActivity(intent);
-                //finish();
-            //}
-        //});
+
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
@@ -109,11 +102,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (id == R.id.nav_auth_seller) {
             Intent intent = new Intent(MainActivity.this, LoginActivity.class);
             startActivity(intent);
-            finish();
+           // finish();
         } else if (id == R.id.nav_rate) {
             Intent intent = new Intent(MainActivity.this, RateActivity.class);
             startActivity(intent);
-            finish();
+           // finish();
+        } else if (id==R.id.nav_customer) {
+            Intent intent = new Intent(MainActivity.this, CustLoginActivity.class);
+            startActivity(intent);
+          //  finish();
+        }  else if (id==R.id.nav_products) {
+            Intent intent = new Intent(MainActivity.this, CustomerActivity.class);
+            startActivity(intent);
+           // finish();
         }
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

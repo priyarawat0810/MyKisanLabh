@@ -11,6 +11,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class SellerActivity extends AppCompatActivity {
     Button logout;
+    Button submit;
 
     private FirebaseAuth mAuth;
 
@@ -20,7 +21,20 @@ public class SellerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_seller);
 
         logout = findViewById(R.id.logout);
+        submit = findViewById(R.id.submit);
         mAuth = FirebaseAuth.getInstance();
+
+
+        submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mAuth.signOut();
+                Intent intent = new Intent(SellerActivity.this,ProdDetailActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
 
         logout.setOnClickListener(new View.OnClickListener() {
             @Override

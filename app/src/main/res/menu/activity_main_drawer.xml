@@ -3,6 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
+    <group android:id="@+id/group_customer">
+        <item
+            android:id="@+id/nav_customer"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Customer Login" />
+    </group>
+
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"

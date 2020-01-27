@@ -87,14 +87,14 @@
                 android:background="#A9EBF3"
                 android:text="sign up" />
 
-            <Button
-                android:id="@+id/skip"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:textSize="20sp"
-                android:background="#A9EBF3"
-                android:text="skip" />
+<!--            <Button-->
+<!--                android:id="@+id/skip"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:textSize="20sp"-->
+<!--                android:background="#A9EBF3"-->
+<!--                android:text="skip" />-->
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

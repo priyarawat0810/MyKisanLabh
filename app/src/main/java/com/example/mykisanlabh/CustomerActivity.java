@@ -26,7 +26,7 @@ public class CustomerActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        custlogout = findViewById(R.id.logout);
+        custlogout = findViewById(R.id.custlogout);
         mAuth = FirebaseAuth.getInstance();
 
         custlogout.setOnClickListener(new View.OnClickListener() {
@@ -35,7 +35,7 @@ public class CustomerActivity extends AppCompatActivity {
                 mAuth.signOut();
                 Intent intent = new Intent(CustomerActivity.this,CustLoginActivity.class);
                 startActivity(intent);
-                finish();
+              //  finish();
             }
         });
     }
