@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".CustomerActivity"
+    tools:showIn="@layout/activity_customer">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="675dp"
+
+            android:background="#976010">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <!--                <androidx.appcompat.widget.LinearLayoutCompat-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="230dp"-->
+                    <!--                    android:background="@drawable/kisan"-->
+                    <!--                    android:gravity="center"-->
+                    <!--                    android:orientation="vertical">-->
+                    <!---->
+                    <!--                </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="215dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="135dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/fruits1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60dp"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/fruit" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/fruits1"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="10dp"
+
+                                        android:layout_marginBottom="10dp"
+                                        android:text="FRUITS"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                    <Button
+                                        android:id="@+id/buttonFruits"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent" />
+
+
+                                </RelativeLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/veg1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60dp"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/veg" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/veg1"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:text="VEGETABLES"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                    <Button
+                                        android:id="@+id/buttonProfile"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent" />
+
+
+                                </RelativeLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="135dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/dairy1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60dp"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/dairy" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/dairy1"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:text="DAIRY"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                    <Button
+                                        android:id="@+id/buttonDairy"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent" />
+
+
+                                </RelativeLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/spice1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60dp"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/spices" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/spice1"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:text="SPICES"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                    <Button
+                                        android:id="@+id/buttonSpice"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent" />
+
+
+                                </RelativeLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="135dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/grain1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60dp"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/grains" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/grain1"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="10dp"
+
+                                        android:layout_marginBottom="10dp"
+                                        android:text="GRAINS"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                    <Button
+                                        android:id="@+id/buttonGrains"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent" />
+
+
+                                </RelativeLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/flower1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60dp"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/flowers" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/flower1"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:text="FLOWERS"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                    <Button
+                                        android:id="@+id/buttonFlower"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent" />
+
+
+                                </RelativeLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="135dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/mushroom1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60dp"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/mushroom" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/mushroom1"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="10dp"
+
+                                        android:layout_marginBottom="10dp"
+                                        android:text="MUSHROOMS"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                    <Button
+                                        android:id="@+id/buttonMushroom"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent" />
+
+
+                                </RelativeLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/pulses1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60dp"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/pulses" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/pulses1"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:text="PULSES"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                    <Button
+                                        android:id="@+id/buttonPulses"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent" />
+
+
+                                </RelativeLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </RelativeLayout>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

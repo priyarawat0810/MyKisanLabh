@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"/>
+    </group>
+
+    <item android:title="Menu">
+        <menu>
+            <item
+                android:id="@+id/nav_products"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Products" />
+            <item
+                android:id="@+id/nav_map"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Map" />
+        </menu>
+    </item>
+
+    <group android:id="@+id/group_seller">
+        <item
+            android:id="@+id/nav_auth_seller"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Authorized Sellers" />
+    </group>
+
+    <group android:id="@+id/group_lang">
+        <item
+            android:id="@+id/nav_lang"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Change Language" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Rate App" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_menu_share"
+                android:title="About Us" />
+            <item
+                android:id="@+id/nav_report"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Report Issue" />
+            <item
+                android:id="@+id/nav_distance"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Set Radius" />
+        </menu>
+    </item>
+</menu>
+
+
