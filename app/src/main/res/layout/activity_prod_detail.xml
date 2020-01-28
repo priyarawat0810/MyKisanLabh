@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".ProdDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            >
+
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F7EFEF"
+                android:ems="10"
+                android:gravity="center"
+
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="40dp"
+                android:text="Create New Product"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:textColorHint="#fff"
+                android:background="#070707"
+                android:hint="Crop Name"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                />
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="40dp"
+                android:textColorHint="#fff"
+                android:background="#070707"
+                android:ems="10"
+                android:hint="Stock"
+                android:inputType="textPersonName"
+
+                android:padding="10dp" />
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textColorHint="#fff"
+                android:layout_marginBottom="40dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:background="#070707"
+                android:hint="Category"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textColorHint="#fff"
+                android:background="#070707"
+                android:layout_marginBottom="40dp"
+                android:ems="10"
+                android:padding="10dp"
+                android:hint="Size"
+                android:inputType="textPersonName" />
+            <EditText
+                android:id="@+id/editText7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textColorHint="#fff"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="40dp"
+                android:ems="10"
+                android:hint="Price"
+                android:padding="10dp"
+                android:background="#070707"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textColorHint="#fff"
+                android:layout_marginEnd="16dp"
+                android:padding="10dp"
+                android:layout_marginBottom="40dp"
+                android:ems="10"
+                android:hint="Warehouse Name"
+                android:background="#070707"
+                android:inputType="textPersonName" />
+            <EditText
+                android:id="@+id/editText9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginEnd="16dp"
+                android:textColorHint="#fff"
+                android:ems="10"
+                android:hint="Phone Number"
+                android:background="#070707"
+                android:padding="10dp"
+                android:inputType="textPersonName" />
+
+
+
+
+
+
+
+
+
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="match_parent"
+                android:ems="10"
+                android:hint="State"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="40dp"
+                android:background="#070707"
+                android:layout_marginEnd="16dp"
+                android:padding="10dp"
+                android:textColorHint="#fff"
+                android:inputType="textPersonName"
+                />
+            <EditText
+                android:id="@+id/editText11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="District"
+                android:background="#070707"
+                android:layout_marginBottom="40dp"
+                android:layout_marginStart="16dp"
+                android:textColorHint="#fff"
+                android:layout_marginEnd="16dp"
+                android:padding="10dp"
+                android:inputType="textPersonName" />
+
+
+
+            <EditText
+                android:id="@+id/editText10"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:padding="10dp"
+                android:hint="Pincode"
+                android:background="#070707"
+                android:layout_height="wrap_content"
+                android:textColorHint="#fff"
+                android:layout_marginBottom="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editText12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:padding="10dp"
+                android:textColorHint="#fff"
+                android:background="#070707"
+                android:layout_marginBottom="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Bank Account Number"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

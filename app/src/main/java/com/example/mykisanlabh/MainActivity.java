@@ -18,6 +18,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -30,7 +31,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private AppBarConfiguration mAppBarConfiguration;
-    Button custlogin;
+  //  Button custlogin;
    // private MenuItem menuItem;
 
     @Override
@@ -115,6 +116,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent intent = new Intent(MainActivity.this, CustomerActivity.class);
             startActivity(intent);
            // finish();
+        } else if (id==R.id.nav_logout) {
+            FirebaseAuth mAuth;
+            mAuth = FirebaseAuth.getInstance();
+            mAuth.signOut();
+          //  Intent intent = new Intent(.this,CustLoginActivity.class);
+           // startActivity(intent);
+            //  finish();
+
         }
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

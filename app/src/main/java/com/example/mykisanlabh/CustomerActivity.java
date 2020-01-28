@@ -11,13 +11,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 
 public class CustomerActivity extends AppCompatActivity {
 
-    Button custlogout;
-
-    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,19 +24,7 @@ public class CustomerActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        custlogout = findViewById(R.id.custlogout);
-        mAuth = FirebaseAuth.getInstance();
 
-        custlogout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mAuth.signOut();
-                Intent intent = new Intent(CustomerActivity.this,CustLoginActivity.class);
-                startActivity(intent);
-              //  finish();
-            }
-        });
-    }
 
        // FloatingActionButton fab = findViewById(R.id.fab);
         //fab.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +34,6 @@ public class CustomerActivity extends AppCompatActivity {
                 //        .setAction("Action", null).show();
             //}
         //});
-    //}
+    }
 
 }

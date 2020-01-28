@@ -24,15 +24,11 @@
                 android:id="@+id/search_bar"
                 android:hint="Search Here"
                 android:textColorHint="#fff"
-                android:textSize="20sp"
+                android:textSize="10sp"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"/>
 
-            <Button
-                android:id="@+id/custlogout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Log Out" />
+
         </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
